@@ -13,7 +13,7 @@ function createListItemMarkup(galleryItems) {
       return `
  <li class="gallery__item">
    <a class="gallery__link" href="${original}">
-      <img class="gallery__image" src="${preview}" alt="${description}"/>
+      <img class="gallery__image" src="${preview}" alt="${description}" />
    </a>
 </li>
 `;
@@ -37,7 +37,7 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionSelector: "img",
   captionType: "attr",
   captionPosition: "bottom",
-  captionData: "alt",
+  captionsData: "alt",
 });
 
 gallery.on("show.simplelightbox", function () {
