@@ -33,10 +33,11 @@ function onGalleryItemsClick(evt) {
 
 const lightbox = new SimpleLightbox(".gallery a", {
   captions: true,
-  captionDelay: 0,
+  captionDelay: 250,
   captionSelector: "img",
   captionType: "attr",
   captionPosition: "bottom",
+  captionData: "alt",
 });
 
 gallery.on("show.simplelightbox", function () {
